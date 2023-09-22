@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box">
+        <h1 class="title">Memory Game</h1>
+        <input
+          type="text"
+          placeholder="Enter your username."
+          id="username"
+          autocomplete="off"
+        />
+        <a href="#games" class="go">Go</a>
+      </div>
+      <div class="game" id="game">
+        <div class="game-body">
+          <div class="info">
+            <p>Hello: <span class="username"></span></p>
+            <!-- <span class="timer" data-time="5"></span> -->
+            <p>Tries: <span class="tries">0</span></p>
+          </div>
+          <div class="blocks">
+            <div class="block-parent">
+              <div class="block" data-animal="zebra">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/01.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="zebra">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/01.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="dog">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/02.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="dog">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/02.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="goat">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/03.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="goat">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/03.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="fishes">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/04.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="fishes">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/04.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="birds">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/05.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="birds">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/05.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="cat">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/06.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="cat">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/06.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="giraffe">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/07.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="giraffe">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/07.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="chicken">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/08.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="chicken">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/08.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="donkeys">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/09.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="donkeys">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/09.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="eagle">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/10.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+            <div class="block-parent">
+              <div class="block" data-animal="eagle">
+                <div class="front">!</div>
+                <div class="end">
+                  <img src="imgs/10.jpg" alt="Animal" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="start-cover">
+          <button class="start">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <!-- Effects -->
+    <audio src="audio/succes.mp3" preload="auto"></audio>
+    <audio src="audio/fail.mp3" preload="auto"></audio>
+    <audio src="audio/win.mp3" preload="auto"></audio>
+
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
